@@ -10,9 +10,9 @@ namespace Spryker\Zed\ProductManagementExtension\Dependency\Plugin;
 use Generated\Shared\Transfer\QueryCriteriaTransfer;
 
 /**
- * Allows to expand query criteria for abstract products.
+ * Allows to expand query criteria for expanding default query running in ProductTable.
  */
-interface ProductAbstractQueryCriteriaExpanderPluginInterface
+interface ProductTableQueryCriteriaExpanderPluginInterface
 {
     /**
      * Specification:
