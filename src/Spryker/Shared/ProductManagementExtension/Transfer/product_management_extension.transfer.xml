@@ -16,4 +16,10 @@
     <transfer name="ProductAbstract">
     </transfer>
 
+    <transfer name="ProductAbstractReadinessRequest" strict="true">
+    </transfer>
+
+    <transfer name="ProductConcreteReadinessRequest" strict="true">
+    </transfer>
+
 </transfers>
