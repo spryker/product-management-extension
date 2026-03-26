@@ -9,6 +9,15 @@ namespace Spryker\Zed\ProductManagementExtension\Dependency\Plugin;
 
 use Generated\Shared\Transfer\ProductAbstractTransfer;
 
+/**
+ * Provides an extension point for injecting Twig template content into product abstract form tabs.
+ *
+ * Use this plugin to render additional templates inside a specific tab of the product abstract add/edit form.
+ * Templates are rendered in plugin registration order with no priority support — use
+ * `ProductAbstractFormTabContentProviderWithPriorityPluginInterface` instead when ordering matters.
+ *
+ * @deprecated Use {@link \Spryker\Zed\ProductManagementExtension\Dependency\Plugin\ProductAbstractFormTabContentProviderWithPriorityPluginInterface} instead.
+ */
 interface ProductAbstractFormTabContentProviderPluginInterface
 {
     /**
@@ -19,6 +28,8 @@ interface ProductAbstractFormTabContentProviderPluginInterface
      * - @see \Spryker\Zed\ProductManagement\Communication\Tabs\AbstractProductFormTabs
      *
      * @api
+     *
+     * @deprecated Use {@link \Spryker\Zed\ProductManagementExtension\Dependency\Plugin\ProductAbstractFormTabContentProviderWithPriorityPluginInterface::getTabName()}() instead.
      *
      * @return string
      */
@@ -32,6 +43,8 @@ interface ProductAbstractFormTabContentProviderPluginInterface
      * - Multiple plugins can provide content for the same tab.
      *
      * @api
+     *
+     * @deprecated Use {@link \Spryker\Zed\ProductManagementExtension\Dependency\Plugin\ProductAbstractFormTabContentProviderWithPriorityPluginInterface::provideTabContent()}() instead.
      *
      * @param \Generated\Shared\Transfer\ProductAbstractTransfer|null $productAbstractTransfer
      *
